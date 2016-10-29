@@ -1,10 +1,10 @@
 ![alt tag](http://puu.sh/rUYji/366304587e.png)
 
-THIS IS BETA REPOSITORY, IF YOU NEED THE STABLE FLAT THEME, CHECK OUT HERE : https://github.com/hmrserver/flat
-
 -----------------------
 
-Flat Theme is a Clean Theme For Open Game Panel.
+Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by King, who designed new structure with flat style. Designed purpose to make a new theme which is the most reliable, and easy to see for beginners of OGP admin. Me as well as his helper, if he need something, we can work together. This is our repository. if you want help us, come on, join our progress for our goal.
+
+Crafter by HMR Team
 
 ### Custom License:
 1. User May Edit the Item but can't replace My Theme Copyright & OGP Copyright.
