@@ -1,0 +1,15 @@
+.clear {
+	clear: both;
+}
+
+.main-content{
+	border:none;
+}
+
+div.main-content a{
+	text-decoration:none;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+    text-decoration:none;
+}

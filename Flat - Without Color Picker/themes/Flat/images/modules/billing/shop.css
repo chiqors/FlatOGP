@@ -1,0 +1,65 @@
+/* game image styling */
+input[type="image"]{
+	margin-top:-15px;
+	width:256px;
+	height:256px;
+}
+
+/* description image styling */
+img{
+	width:256px;
+	height:256px;
+}
+
+/* cart image styling */
+a img{
+	width:20px;
+	height:20px;
+}
+
+/* Game name below image */
+center {
+
+}
+
+/* pricing text */
+center em{
+	text-align:center;
+	background-color:#ffffff !important;
+	color:#379bb9 !important;
+}
+
+.main-content{
+	border:none;
+}
+
+table.center{
+	color:#379bb9;
+	padding:10px;
+}
+
+table.center tr td{
+	padding-top:5px;
+	color:#ffffff;
+	cursor:default;
+}
+
+#content a:link, #content a:visited{
+	text-decoration:none;
+	background-color:#e0e0e0;
+	border:#707070 1px solid;
+	padding-top:5px;
+	padding-bottom:2px;
+	padding-left:10px;
+	padding-right:10px;
+	color:#707070;
+	border-radius:3px;
+}
+
+a img{
+	width: 22px;
+	height: 20px;
+}
+
+
+
