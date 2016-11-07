@@ -27,7 +27,7 @@ Warning! Please backup the index.php file of your OGP panel before getting start
 
 #### Installation Steps:
 
-Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/releases)
+Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/releases)<br />
 If you already downloaded. Progress to next instruction as what you want.
 
 #### IF YOU WANT FLAT THEME WITH COLOR PICKER
