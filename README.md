@@ -27,8 +27,10 @@ Warning! Please backup the index.php file of your OGP panel before getting start
 
 #### Installation Steps:
 
+Download the lastest version from here : [a link](https://github.com/HAN-105/FlatOPG/releases)
+
 #### IF YOU WANT FLAT THEME WITH COLOR PICKER
-1. Extrat the zip file.
+1. Extract the zip file.
 2. Go to Flat Folder > Flat - With Color Picker Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
 4. Once the Pasting process completes, login to your OGP Panel.
@@ -36,7 +38,7 @@ Warning! Please backup the index.php file of your OGP panel before getting start
 6. That's all, Now you would have Flat Theme with Color Picker in it. ENJOY!
 
 #### IF YOU WANT FLAT THEME WITHOUT COLOR PICKER
-1. Extrat the zip file.
+1. Extract the zip file.
 2. Go to Flat Folder > Flat - Without Color Picker Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
 4. Once the Pasting process completes, login to your OGP Panel.
