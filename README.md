@@ -5,7 +5,7 @@
 Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by King, who designed new structure with flat style. Designed purpose to make a new theme which is the most reliable, and easy to see for beginners of OGP admin. Me as well as his helper, we can work together to achieve this goal. This is our repository. if you want help us, come on, join our progress for our goal.
 
 
-Crafter by HMR Team
+Crafted by HMR Team
 
 -----------------------
 
