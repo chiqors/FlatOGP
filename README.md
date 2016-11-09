@@ -8,7 +8,7 @@ Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by K
 
 Crafted by HMR Team
 
-Join our discord group, whether you want play with us in halo pc games : https://discord.me/hmrserver
+Join our discord group, whether you want talk with us or play with us in halo pc games : https://discord.me/hmrserver
 
 -----------------------
 
