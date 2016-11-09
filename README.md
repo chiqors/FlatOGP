@@ -62,3 +62,4 @@ The Color Picker Comes with 2 Skins i.e Dark & Light
 Credits goes to James30263 for Creating those Billing Game's Preview images Pack.
 
 Support would be given at the Flat release thread of OGP forum.
+By HMR Team
