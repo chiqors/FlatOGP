@@ -1,11 +1,14 @@
-![alt tag](http://puu.sh/rUYji/366304587e.png)
+![alt tag](https://raw.githubusercontent.com/HAN-105/FlatOPG/master/banner.png)
 
 -----------------------
 
-Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by King, who designed new structure with flat style. Designed purpose to make a new theme which is the most reliable, and easy to see for beginners of OGP admin. Me as well as his helper, if he need something, we can work together. This is our repository. if you want help us, come on, join our progress for our goal.
+##FLAT THEME
 
+Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by King, who designed new structure with flat style. Designed purpose to make a new theme which is the most reliable and easy for beginners of OGP admin. Me as well as his helper, we can work together to achieve this goal. This is our repository. if you want help us, come on, join our progress for our goal.
 
-Crafter by HMR Team
+Crafted by HMR Team
+
+Join our discord group, whether you want talk with us or play with us in halo pc games : https://discord.me/hmrserver
 
 -----------------------
 
@@ -27,8 +30,11 @@ Warning! Please backup the index.php file of your OGP panel before getting start
 
 #### Installation Steps:
 
+Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/releases)<br />
+If you already downloaded. Progress to next instruction as what you want to finish
+
 #### IF YOU WANT FLAT THEME WITH COLOR PICKER
-1. Extrat the zip file.
+1. Extract the zip file.
 2. Go to Flat Folder > Flat - With Color Picker Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
 4. Once the Pasting process completes, login to your OGP Panel.
@@ -36,7 +42,7 @@ Warning! Please backup the index.php file of your OGP panel before getting start
 6. That's all, Now you would have Flat Theme with Color Picker in it. ENJOY!
 
 #### IF YOU WANT FLAT THEME WITHOUT COLOR PICKER
-1. Extrat the zip file.
+1. Extract the zip file.
 2. Go to Flat Folder > Flat - Without Color Picker Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
 4. Once the Pasting process completes, login to your OGP Panel.
