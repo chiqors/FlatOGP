@@ -2,6 +2,8 @@
 
 -----------------------
 
+##FLAT THEME
+
 Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by King, who designed new structure with flat style. Designed purpose to make a new theme which is the most reliable and easy for beginners of OGP admin. Me as well as his helper, we can work together to achieve this goal. This is our repository. if you want help us, come on, join our progress for our goal.
 
 Crafted by HMR Team
@@ -62,4 +64,3 @@ The Color Picker Comes with 2 Skins i.e Dark & Light
 Credits goes to James30263 for Creating those Billing Game's Preview images Pack.
 
 Support would be given at the Flat release thread of OGP forum.
-By HMR Team
