@@ -63,4 +63,4 @@ The Color Picker Comes with 2 Skins i.e Dark & Light
 1. just link them to the module's billing folder of Flat theme. (Example: xxx.xxx.xxx.xxx/themes/Flat/images/modules/billing/yourimage.png) You can use them anywhere on your site!
 Credits goes to James30263 for Creating those Billing Game's Preview images Pack.
 
-Support would be given at the Flat release thread of OGP forum.
+Support would be given at the Flat release thread of OGP forum. Talk us on discord if you want to discuss something
