@@ -16,6 +16,7 @@ Join our official discord group, whether you want talk with us or play with us i
 1. User May Edit the Item but can't replace My Theme Copyright & OGP Copyright.
 2. User can't re-distribute the Theme's Copy for Free or Paid.
 3. User should not copy any feature of this item.
+4. User need confirmation with us before taking theme as bussiness and removing copyright mark
 
 #### For Installation Follow the steps below:
 Warning! Please backup the index.php file of your OGP panel before getting started.
