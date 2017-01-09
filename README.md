@@ -35,7 +35,7 @@ Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/rele
 If you already downloaded. Progress to next instruction as what you want to finish
 
 1. Extract the zip file.
-2. Go to Flat Folder > Flat - With Color Picker Folder.
+2. Go to Flat Folder > Flat - Base Theme Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
 4. Once the Pasting process completes, login to your OGP Panel.
 5. Navigate to Administration > Theme Settings, Change the theme to Flat and save.
