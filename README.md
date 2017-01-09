@@ -16,7 +16,7 @@ Join our official discord group, whether you want talk with us or play with us i
 1. User May Edit the Item but can't replace My Theme Copyright & OGP Copyright.
 2. User can't re-distribute the Theme's Copy for Free or Paid.
 3. User should not copy any feature of this item.
-4. User need confirmation with us before taking theme as bussiness and removing copyright mark
+4. User need confirmation with us before taking theme as business and removing copyright mark
 
 #### For Installation Follow the steps below:
 Warning! Please backup the index.php file of your OGP panel before getting started.
@@ -36,7 +36,6 @@ If you already downloaded. Progress to next instruction as what you want to fini
 
 NOTE : Flat - With ColorPicker will always up to date but could be unstable than without it, make sure you know risk and also report any bugs and feedback or suggestion are welcome. We recommended you to download at release page [HERE](https://github.com/HAN-105/FlatOPG/releases)
 
-#### IF YOU WANT FLAT THEME WITH COLOR PICKER
 1. Extract the zip file.
 2. Go to Flat Folder > Flat - With Color Picker Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
@@ -44,16 +43,7 @@ NOTE : Flat - With ColorPicker will always up to date but could be unstable than
 5. Navigate to Administration > Theme Settings, Change the theme to Flat and save.
 6. That's all, Now you would have Flat Theme with Color Picker in it. ENJOY!
 
-#### IF YOU WANT FLAT THEME WITHOUT COLOR PICKER
-1. Extract the zip file.
-2. Go to Flat Folder > Flat - Without Color Picker Folder.
-3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
-4. Once the Pasting process completes, login to your OGP Panel.
-5. Navigate to Administration > Theme Settings, Change the theme to Flat and save.
-6. That's all, Now you would have Flat Theme without Color Picker in it. ENJOY!
-
-
-#### For changing default color of the theme to your own color Follow the steps(ONLY FOR FLAT THEME WITH COLOR PICKER):
+#### For changing default color of the theme to your own color, Follow the steps :
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
 2. Edit mainColor's hex (default: 398bba) to your own color's hex without #.
 
@@ -66,4 +56,4 @@ The Color Picker Comes with 2 Skins i.e Dark & Light
 1. just link them to the module's billing folder of Flat theme. (Example: xxx.xxx.xxx.xxx/themes/Flat/images/modules/billing/yourimage.png) You can use them anywhere on your site!
 Credits goes to James30263 for Creating those Billing Game's Preview images Pack.
 
-Support would be given at the Flat release thread of OGP forum. Talk us on discord : https://discord.me/hmrserver . if you want to discuss something
+Support would be given at here, Talk us on discord : https://discord.me/hmrserver . if you want to discuss something.
