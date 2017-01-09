@@ -34,8 +34,6 @@ Warning! Please backup the index.php file of your OGP panel before getting start
 Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/releases)<br />
 If you already downloaded. Progress to next instruction as what you want to finish
 
-NOTE : Flat - With ColorPicker will always up to date but could be unstable than without it, make sure you know risk and also report any bugs and feedback or suggestion are welcome. We recommended you to download at release page [HERE](https://github.com/HAN-105/FlatOPG/releases)
-
 1. Extract the zip file.
 2. Go to Flat Folder > Flat - With Color Picker Folder.
 3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
