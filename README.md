@@ -13,8 +13,8 @@ Join our official discord group, whether you want talk with us or play with us i
 -----------------------
 
 ### Custom License:
-1. User May Edit the Item but can't replace My Theme Copyright & OGP Copyright.
-2. User can't re-distribute the Theme's Copy for Free or Paid.
+1. User may edit the item, but can't replace My Theme Copyright & OGP Copyright.
+2. User can't re-distribute the theme's copy for free or paid.
 3. User should not copy any feature of this item.
 4. User need confirmation with us before taking theme as business and removing copyright mark
 
@@ -35,11 +35,10 @@ Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/rele
 If you already downloaded. Progress to next instruction as what you want to finish
 
 1. Extract the zip file.
-2. Go to Flat Folder > Flat - Base Theme Folder.
-3. Copy everything inside it, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
-4. Once the Pasting process completes, login to your OGP Panel.
-5. Navigate to Administration > Theme Settings, Change the theme to Flat and save.
-6. That's all, Now you would have Flat Theme with Color Picker in it. ENJOY!
+2. Copy everything inside the folder, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
+3. Once the Pasting process completes, login to your OGP Panel.
+4. Navigate to Administration > Theme Settings, Change the theme to Flat and save.
+5. That's all, Now you would have Flat Theme with Color Picker in it. ENJOY!
 
 #### For changing default color of the theme to your own color, Follow the steps :
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
