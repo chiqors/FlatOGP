@@ -35,10 +35,10 @@ Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/rele
 If you already downloaded. Progress to next instruction as what you want to finish
 
 1. Extract the zip file.
-2. Copy everything inside the folder, navigate to your OGP Panel's root folder and paste there, If it asks for Overwrite then go ahead and Press OK.
-3. Once the Pasting process completes, login to your OGP Panel.
-4. Navigate to Administration > Theme Settings, Change the theme to Flat and save.
-5. That's all, Now you would have Flat Theme in it. ENJOY!
+2. Copy everything inside the folder, navigate to your OGP Panel's root folder and paste there, If it asks for overwrite then go ahead and click "OK".
+3. Once the pasting process completes, login to your OGP Panel.
+4. Navigate to Administration > Theme Settings, Change the theme to Flat and save it.
+5. That's all, now you would have Flat Theme in it. ENJOY!
 
 #### For changing default color of the theme to your own color, Follow the steps :
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
