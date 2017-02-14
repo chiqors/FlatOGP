@@ -53,7 +53,6 @@ If you already downloaded. Progress to next instruction as what you want to fini
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
 2. Edit mainColor's hex (default: 398bba) to your own color's hex without #.
 
-The Color Picker Comes with 2 Skins i.e Dark & Light
 #### For changing default skin of the Color Picker Follow the steps(ONLY FOR FLAT THEME WITH COLOR PICKER):
 >
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
