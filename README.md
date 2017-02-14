@@ -61,6 +61,7 @@ If you already downloaded. Progress to next instruction as what you want to fini
 #### For Billing Game's Preview images Pack Installation Follow the steps below:
 >
 just link them to the module's billing folder of Flat theme. (Example: xxx.xxx.xxx.xxx/themes/Flat/images/modules/billing/yourimage.png) You can use them anywhere on your site!
+
 Credits goes to **James30263** for Creating those Billing Game's Preview images Pack.
 
 Support would be given at here, Talk us on discord : https://discord.me/hmrserver . if you want to discuss something.
