@@ -2,6 +2,9 @@
 
 -----------------------
 
+##SHORT NOTE BEFORE DESCRIPTION
+As you know, There are 2 Github Repository of this theme. Actually, Our main official Github project at https://github.com/hmrserver/Flat. But this is a clone project and modified. Also It's Official too.. but this repository purpose for public use. Example, We replaced kind of HMR Logo and as well Favicon with Flat OGP Style.
+
 ##FLAT THEME
 
 Flat Theme is a Clean Theme For Open Game Panel. Flat Theme first developed by King, who designed new structure with flat style. Designed purpose to make a new theme which is the most reliable and easy for beginners of OGP admin. Me as well as his helper, we can work together to achieve this goal. This is our repository. if you want help us, come on, join our progress for our goal.
