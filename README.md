@@ -46,14 +46,7 @@ If you already downloaded. Progress to next instruction as what you want to fini
 
 -----------------------
 
-### For changing default color of the theme to your own color, Follow the steps :
->
-1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
-2. Edit mainColor's hex (default: 398bba) to your own color's hex without #.
-
------------------------
-
-### For changing default skin of the Color Picker, Follow the steps(ONLY FOR FLAT THEME WITH COLOR PICKER):
+### For changing default skin of the Color Picker, Follow the steps below:
 >
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
 2. Edit PickerTheme's text (default: dark) to light or dark.
