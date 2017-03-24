@@ -8,14 +8,14 @@
 	background-color:#F0F0F6;
 	transition: background-color 0.5s;
 	-webkit-transition: background-color 0.5s;
-	border: 1px solid grey;
-	width:145px !important;
-	height:72px !important;
+	//border: 1px solid grey;
+	width: 125px !important;
+	height:76px !important;
 	background-color: #D7EDF3 !important;
 	vertical-align: middle !important;
 }
 .monitorbutton tr td:hover {
-	background-color:#398bba !important;
+	background-color: #4875B3 !important;
 	transition: background-color 0.5s;
 	-webkit-transition: all 0.5s;
 	cursor:pointer;
@@ -33,11 +33,6 @@
 	display:none; 
 }
 
-button:active, button[type="submit"]:active, input[type="submit"]:active, .monitorbutton tr td:active {
-	background-color:#0F0 !important;
-	transition: background-color 0.25s;
-	-webkit-transition: background-color 0.25s;
-}
 #server_icon{
 	display:block;
 	float:left;
@@ -64,11 +59,5 @@ button:active, button[type="submit"]:active, input[type="submit"]:active, .monit
 
 table.center {
 	background-color:#D7EDF3;
-	border:1px solid grey;
 	margin-left:2px;
-}
-
-table.center tr td{
-	background: #D7EDF3 !important;
-	border:none;
 }

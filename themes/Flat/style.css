@@ -1,31 +1,31 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto:300');
 html {
-    background: $bottomWrapper.bg.color;
     margin: 0 0 0 -1px;
     padding: 0;
     overflow-Y: scroll
 }
-
-select[name="home_cfg_id"] {
-    margin-bottom: 10px
-}
-
-select[name="home_id-mod_id-ip-port"] {
-    margin-bottom: 10px
-}
-
 body {
     padding: 0;
     margin: 0;
     width: 100%;
     background-position: center 190px;
     color: #444;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: 13px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     text-transform: normal;
-    background-color: #ecf0f5
+    background-color: #ecf0f5;
+}
+h1, h2, h3, h4, h5, h6,
+.menu
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 300;
+}
+b {
+    font-weight: 300 !important;
 }
 
 #ipaddress {
@@ -33,7 +33,7 @@ body {
 }
 
 #datetime {
-    background: #398bba;
+    background: #4875B3;
     color: #fff;
     height: 48px;
 }
@@ -67,7 +67,6 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
-    font-family: "Trebuchet MS";
     font-size: 12px;
     border-radius: 0 0 7px 7px;
     right: 5%;
@@ -90,45 +89,21 @@ body {
     padding-bottom: 1%;
     padding-left: 1%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid #398bba
+    border-top: 3px solid #4875B3
 }
 
-tr.maintr.odd {
-    border-bottom: 1px solid #398bba
-}
-
-tr.maintr.expandme.odd {
-    border-bottom: 1px solid #379bb9
-}
-
-tr.maintr.even {
-    border-bottom: 1px solid #398bba
-}
-
-tr.maintr.expandme.even {
-    border-bottom: 1px solid #379bb9
-}
-
-tr.expand-child.odd {
-    border-bottom: 1px solid #379bb9
-}
-
-tr.expand-child.even {
-    border-bottom: 1px solid #379bb9
+tr.maintr:not(:last-child),
+tr.expand-child:not(:last-child)
+{
+    border-bottom: 1px solid #cecece
 }
 
 div.submit-start {
     margin-top: 10px
 }
 
-table.start-server td.info {
-    border-top: 0
-}
-
-table.start-server tbody tr td {
-    border-top: 0
-}
-
+table.start-server td.info,
+table.start-server tbody tr td,
 table.start-server td.left {
     border-top: 0
 }
@@ -142,14 +117,6 @@ hr {
     display: none
 }
 
-.user_menu_link_selected,
-.admin_menu_link_selected {
-    color: #fff!important;
-    border-left-color: #3c8dbc!important;
-    background: #182124!important;
-    text-shadow: none!important
-}
-
 .pull-right {
     margin-top: 3px;
     font-size: 14px!important
@@ -160,7 +127,9 @@ hr {
 .menu ul>li>a>span:before,
 .menu>ul li>ul>li.copied>a>span:before {
     font: normal normal normal 18px/1 FontAwesome;
-    padding-right: 10px
+    padding-right: 10px;
+    display: inline-block;
+    width: 20px;
 }
 
 .menu>ul li>ul>li>a>.addons_manager:before {
@@ -359,7 +328,8 @@ hr {
 }
 
 .menu-bg {
-    float: left
+    float: left;
+    background-color: #2c3b41;
 }
 
 .menu>ul {
@@ -390,7 +360,6 @@ hr {
     position: relative;
     margin: 0;
     padding: 11px 20px;
-    font-family: Helvetica, Arial, sans-serif;
     color: #d8d8d8;
     text-decoration: none;
     font-size: 12px;
@@ -412,7 +381,7 @@ hr {
 .menu>ul>li:hover>a {
     color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    border-left-color: #398bba;
+    border-left-color: #4875B3;
     background: #1e282c
 }
 
@@ -452,7 +421,7 @@ hr {
     background-color: #2c3b41;
     list-style: none;
     padding: 0;
-    padding-left: 5px;
+    //padding-left: 5px;
     opacity: 1;
     display: none
 }
@@ -462,11 +431,12 @@ hr {
 }
 
 .treeview-sub>li>a {
-    padding: 7px 7px 7px 15px;
+    padding: 7px 7px 7px 10px;
+    margin-left: 10px;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     color: #8aa4af;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .treeview-sub>li:hover>a {
@@ -503,8 +473,7 @@ hr {
 
 #content a:link,
 #content a:visited {
-    color: #398bba;
-    font-weight: bold;
+    color: #4875B3;
     text-decoration: none
 }
 
@@ -533,25 +502,25 @@ hr {
 }
 
 .bloc {
-    padding: 0 15px 1px 15px;
-    background-color: #e4f3f7;
+    padding: 0 15px 10px 15px;
     border-radius: 2px;
     -moz-border-radius: 2px;
     overflow: hidden;
-    text-align: left;
-    font-size: .9em
 }
 
 .bloc h4 {
     font-size: 15px;
     margin-left: -15px;
     margin-right: -15px;
-    cursor: move
+}
+
+.ui-sortable h4 {
+    cursor: move;
 }
 
 .dragbox-content {
     padding-top: 15px;
-    padding-bottom: 15px
+    padding-bottom: 15px:
 }
 
 .column {
@@ -568,7 +537,7 @@ hr {
 }
 
 .dragbox h4.collapse {
-    background: #398bba url('images/collapse.png') no-repeat top right;
+    background: #4875B3 url('images/collapse.png') no-repeat top right;
     background-size: 25px 100%
 }
 
@@ -608,23 +577,26 @@ p2 {
 }
 
 h0 {
-    color: #333;
+    color: #fff;
     margin: 10px 0 10px 0;
     clear: both;
-    width: 99.8%;
     height: 35px;
-    background: #f5f5f5;
-    border-style: solid;
-    border-color: #cfcfcf;
-    border-width: 1px;
+    background: #4875B3;
     margin-top: 20px;
     padding-top: 10px;
     text-align: center;
-    font-family: "Trebuchet MS";
     font-size: 20px;
     display: block;
-    font-weight: bold;
-    border-radius: 2px
+    border-radius: 2px;
+    font-family: roboto;
+}
+
+.main-content > h4:first-child {
+    margin-left: -1%;
+    margin-right: -1%;
+    width: 102%;
+    padding: 10px 20px 5px;
+    font-size: 16px;
 }
 
 h1 {
@@ -637,7 +609,7 @@ h2 {
     color: #fff;
     clear: both;
     height: 35px;
-    background: #398bba;
+    background: #4875B3;
     padding-top: 10px;
     margin-top: -1px;
     margin-right: -1%;
@@ -645,28 +617,30 @@ h2 {
     text-align: center;
     color: #FFFF;
     font-weight: normal;
-    font-family: "Trebuchet MS"
 }
 
 h3 {
-    color: #333;
+    color: #fff;
     margin: 10px 0 5px 0;
-    clear: both
+    clear: both;
+    background: #4875B3;
+    text-align: center;
+    padding: 6px;
+    border-radius: 2px;
 }
 
 h4 {
     color: #fff;
     margin: 0 auto;
     height: 31px;
-    background: #398bba;
+    background: #4875B3;
     padding-top: 10px;
     text-align: center;
-    font-family: "Trebuchet MS"
 }
 
 a:link,
 a:visited {
-    color: #9b251b;
+    color: transparent;
     text-decoration: none
 }
 
@@ -675,15 +649,18 @@ a:hover {
 }
 
 #bottomWrapper {
-    background-color: #000;
+    background-color: #2c3b41;
     background-position: center top;
     background-repeat: repeat-x;
     text-align: center;
-    color: #fff;
+    color: #d8d8d8;
     text-align: center;
     width: 100%;
     height: 110px;
-    clear: both
+    clear: both;
+    -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.5);
 }
 
 #bottomWrapper a:link,
@@ -748,7 +725,6 @@ a:hover {
 
 a img {
     border: 0;
-    padding-right: 10px
 }
 
 .online_servers {
@@ -772,22 +748,28 @@ a img {
 }
 
 table.tablesorter {
-    font-family: arial;
     background-color: #FFF;
     margin: 10px 0 15px;
     width: 100%;
     text-align: left;
     border-collapse: collapse;
     border-spacing: 1px;
-    border-left: 1px solid #379bb9;
-    border-right: 1px solid #379bb9
 }
 
 table.tablesorter thead tr th,
 table.tablesorter tfoot tr th {
-    background-color: #398bba;
-    font-size: 8pt;
-    padding: 4px
+    background-color: #4875B3;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 2px;
+}
+
+table.tablesorter thead tr .header:first-child {
+    border-top-left-radius: 4px;
+}
+
+table.tablesorter thead tr .header:last-child {
+    border-top-right-radius: 4px;
 }
 
 table.tablesorter thead tr .header {
@@ -795,43 +777,81 @@ table.tablesorter thead tr .header {
     color: #fff
 }
 
+table.tablesorter thead tr .header:hover {
+    background-color: #395d8f;
+}
+
+.header #action-stop,
+.header #action-restart,
+.header #action-start
+{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 table.tablesorter tbody td {
     color: #3d3d3d;
-    padding: 4px;
+    padding: 6px 2px;
     background-color: #FFF;
     vertical-align: top
 }
 
+table.tablesorter tbody td:first-child {
+    padding-left: 12px;
+}
+
+table.tablesorter tbody td:last-child {
+    padding-right: 12px;
+}
+
 table.tablesorter tbody tr.odd td {
-    background-color: #e4f3f7
+    background-color: #f9f9f9;
 }
 
-table.tablesorter thead tr .headerSortUp {
-    background-image: url(images/asc.gif);
-    background-repeat: no-repeat;
-    background-position: center right
+table.tablesorter thead tr .headerSortUp span,
+table.tablesorter thead tr .headerSortDown span {
+    margin-left: 5px;
 }
 
-table.tablesorter thead tr .headerSortDown {
-    background-image: url(images/desc.gif);
-    background-repeat: no-repeat;
-    background-position: center right
+table.tablesorter thead tr .headerSortDown:before,
+table.tablesorter thead tr .headerSortUp:before
+{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f104";
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+table.tablesorter thead tr .headerSortUp:before {
+    //background-image: url(images/asc.gif);
+    //background-repeat: no-repeat;
+    //background-position: center right;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg)
+}
+
+table.tablesorter thead tr .headerSortDown:before {
+    //background-image: url(images/desc.gif);
+    //background-repeat: no-repeat;
+    //background-position: center right;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg)
 }
 
 table.tablesorter thead tr .headerSortDown,
 table.tablesorter thead tr .headerSortUp {
-    background-color: #398bba
+    background-color: #4875B3
+}
+
+table.tablesorter tfoot {
+    border: none !important;
 }
 
 table.tablesorter tfoot td {
     color: #3d3d3d;
     padding-top: 15px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-    background-color: #e4f3f7;
-    vertical-align: top;
-    border: 1px solid #379bb9
 }
 
 .hidden {
@@ -886,10 +906,6 @@ pre {
     overflow: auto
 }
 
-.button {
-    border: 1px dotted gray
-}
-
 .server_monitor {
     background: #eee
 }
@@ -910,7 +926,39 @@ pre {
     float: right;
     display: inline-block;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.monitor-2 td img,
+.header #action-stop,
+.header #action-restart,
+.header #action-start,
+#server_icon img
+{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.monitor-2 td:hover img,
+.header #action-stop:hover,
+.header #action-restart:hover,
+.header #action-start:hover,
+#server_icon:hover img
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+}
+
+#server_icon img {
+    margin-top: 3px;
 }
 
 .monitor-2 div {
@@ -933,18 +981,24 @@ pre {
 
 .srvctrl td,
 .srvctrl th {
-    padding: 0;
-    border: 0
+    padding: 0 !important;
+    border: 0;
+}
+
+.srvctrl td {
+    width: 85px;
 }
 
 .mapicon {
-    width: 135px;
-    height: 100px;
-    float: left
+    width: 160px;
+    height: 120px;
+    float: left;
+    margin-bottom: 5px;
+    border-radius: 2px;
 }
 
 .hostname {
-    width: 100px
+    width: 200px;
 }
 
 .login {
@@ -975,53 +1029,6 @@ p {
 
 .player_monitor tbody tr td .odd {
     background: 333
-}
-
-.input {
-    border: 1px solid #006
-}
-
-input[type="submit"],
-button {
-    border: 2px solid #398bba;
-    padding: 4px 8px;
-    background: #398bba;
-    color: #fff;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -webkit-transition: all 300ms linear;
-    margin: 0 2px
-}
-
-input[type="submit"]:hover,
-button:hover {
-    border: 2px solid #398bba;
-    background: transparent!important;
-    color: #398bba;
-    border-radius: 2px;
-    transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -webkit-transition: all 300ms linear
-}
-
-input[type="text"],
-input[type="password"],
-textarea {
-    color: #333;
-    padding: 3px;
-    border: 1px solid #ccc;
-    border-radius: 2px
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-input[type="text"]:hover,
-input[type="password"]:hover,
-textarea:hover {
-    border-color: #398bba
 }
 
 .jqmWindow {
@@ -1086,13 +1093,20 @@ textarea:hover {
 }
 
 .start-server td.right {
-    width: 50%;
-    text-align: right !important
+    width: 200px;
+    font-weight: bold;
 }
 
-.start-server td.left {
-    width: 50%;
-    text-align: left !important
+.start-server tr:not(:last-child) {
+    border-bottom: 1px solid #cecece;
+}
+
+.start-server tr:nth-child(even) td {
+    background-color: #f9f9f9 !important;
+}
+
+.start-server tr:nth-child(odd) td {
+    background-color: #fff !important;
 }
 
 .submit-start {
@@ -1113,7 +1127,8 @@ textarea:hover {
 }
 
 .server-starting,
-.list_table {
+.list_table,
+.main-content :not(.login_form) table {
     width: 100%
 }
 
@@ -1128,23 +1143,6 @@ textarea:hover {
 
 #servermonitor>tfoot .bloc.right {
     float: right
-}
-
-.login_button:hover {
-    color: #398bba;
-    transition: all 300ms linear
-}
-
-.login_button {
-    width: 320px;
-    background-color: #378cd5;
-    padding: 8px!important;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 300ms linear;
-    border-radius: 2px
 }
 
 #datetime>a>img {
@@ -1190,7 +1188,7 @@ textarea:hover {
 
 .datetime>ul {
     position: absolute;
-    background: #398bba url("images/dark-bg.png");
+    background: #4875B3 url("images/dark-bg.png");
     list-style: none;
     top: 50px;
     width: 170px;
@@ -1234,7 +1232,15 @@ textarea:hover {
     content: none
 }
 
-.treeview .treeview .copied {}
+.treeview.active,
+.treeview-sub.menu-open
+{
+    padding-bottom: 10px;
+}
+
+.treeview.active > a {
+	border-left-color: #4875B3;
+}
 
 .treeview.active>a>.fa-angle-left {
     transform: rotate(-90deg);
@@ -1248,12 +1254,10 @@ textarea:hover {
 
 .treeview-sub>li>a.admin_menu_link_selected {
     border-left: none!important;
-    background: #2c3b41!important
 }
 
 .treeview-sub>li>a.user_menu_link_selected {
     border-left: none!important;
-    background: #2c3b41!important
 }
 
 .treeview-sub>li.treeview>a {
@@ -1263,24 +1267,27 @@ textarea:hover {
 
 .avatar-cover {
     padding: 12px;
-    background-color: #3B3B3B33;
+    background-color: #2c3b41;
+    box-sizing: border-box;
+    height: 85px;
+    text-align: right;
+}
+
+.avatar-cover #avatar {
+    float: left;
 }
 
 .avatar-username {
     color: #fff;
     vertical-align: top;
-    top: 20px;
-    position: relative;
-    left: 20px;
-    font-size: 15px
+    font-size: 15px;
+    display: block;
 }
 
 .avatar-status {
     font-size: 13px;
     color: #a2a2a2;
-    position: absolute;
-    left: 95px;
-    top: 100px
+    display: block;
 }
 
 .avatar-status i {
@@ -1310,19 +1317,6 @@ textarea:hover {
     }
 }
 
-/**LOGIN CSS**/
-.login_header {
-    font-size: 20px !important;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 10px 25px 2px 25px;
-}
-
-.edit_avatar {
-    overflow: hidden;
-    position: relative;
-}
-
 .edit_avatar [type=file] {
     cursor: inherit;
     display: block;
@@ -1344,9 +1338,9 @@ textarea:hover {
     border-radius: .5em;
     float: left;
     padding: .5em;
-    position: absolute;
-    margin: 52px 0px 0px -1px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .fileContainer [type=file] {
@@ -1355,7 +1349,112 @@ textarea:hover {
 #remove_avatar {
     padding: 2px;
     color: #ec4545;
-    margin: 56px 0px 0px 30px;
-    position: absolute;
+    float: left;
+    margin-top: 4px;
+    font-size: 14px;
     cursor: pointer;
+}
+
+/* ********** FORM STYLES *********** */
+select, input, textarea, button,
+.main-content a[href^="?m=modulemanager"]:not(.administration-buttons),
+.main-content a[href^="?m=gamemanager&p=game_monitor&home_id="]:not(.administration-buttons),
+.main-content a[href="?m=user_games"]:not(.administration-buttons)
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: roboto;
+    padding: 6px 12px;
+    margin: 0px 5px 5px 5px;
+    border-radius: 1px;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    font-size: 14px;
+    display: inline-block;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+button,
+input[type="image"],
+.main-content a[href^="?m=modulemanager"]:not(.administration-buttons),
+.main-content a[href^="?m=gamemanager&p=game_monitor&home_id="]:not(.administration-buttons),
+.main-content a[href="?m=user_games"]:not(.administration-buttons)
+{
+    text-transform: uppercase;
+    background-color: #4875B3;
+    border-color: #4875B3;
+    border-radius: 3px;
+    color: #fff !important;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+button:hover,
+input[type="image"]:hover,
+.main-content a[href^="?m=modulemanager"]:not(.administration-buttons):hover
+.main-content a[href^="?m=gamemanager&p=game_monitor&home_id="]:not(.administration-buttons):hover,
+.main-content a[href="?m=user_games"]:not(.administration-buttons):hover
+{
+    cursor: pointer;
+    background-color: #395d8f;
+    border-color: #365887;
+}
+
+input[name="add_ftp_user"] {
+    width: auto !important;
+    margin-left: 0px;
+}
+.forgotp {
+    margin-right: 5px;
+}
+.forgotp a {
+    line-height: 36px;
+}
+
+
+
+
+.upload-image { margin: 0px; }
+
+.first_row {
+    font-weight: bold;
+}
+.tr1:hover,
+.tr0:hover
+{
+    background-color: #f3f3f3;
+}
+.first_row,
+tr0,
+tr1
+{
+    padding: 6px 2px;
+}
+
+.login_form {
+	background-color: #fff;
+	width: 350px;
+	margin-top: 50px;
+}
+.login_form h4 {
+	font-size: 16px;
+}
+input[name=ulogin]{
+	margin: 20px 0px 10px;
+}
+input[name=upassword] {
+	margin: 10px 0px;
+}
+input[name=ulogin],
+input[name=upassword]
+{
+	width: 320px;
+}
+input[name=login] {
+	width: 340px;
 }

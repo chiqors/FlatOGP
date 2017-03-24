@@ -29,16 +29,15 @@ document.write("   |   <b>" + hours + ":" + minutes + " " + suffix + "</b>");
 /* Login */
 jQuery(function($){
 	if((window.location.href.indexOf("index.php") != -1 && window.location.href.indexOf("index.php?") == -1 ) || $('input[name=ulogin]').length != false) {
-		var username_text = $("div.bloc table tbody tr:first td:first").html().replace(':','');
-		var pass_text = $("div.bloc > form > table > tbody > tr:nth-child(2) > td:first").html().replace(':','');
-	
+		var username_text = $(".bloc > form > table > tbody > tr:nth-child(2) > td:nth-child(1)").html().replace(':','');
+		var pass_text = $(".bloc > form > table > tbody > tr:nth-child(3) > td:nth-child(1)").html().replace(':','');
+
 		/* Login Elements */
-		$("div.main-content").attr('style', 'box-shadow: none;')//Remove unwanted Shadow effect
-		$('div.bloc h4').addClass('login_header'); //Adds classes to main-content
-		$("div.main-content > table").removeAttr("style"); //Removes style from table.
-		$("div.main-content > table").attr('align', 'center');//Center it.
-		$("div.main-content > table").attr('style', 'padding: 0px 10px 1px 10px;margin-top: 80px;'); //Removes style from table + droping it little down..
-		$("input[name=login]").addClass('login_button');//Adding class
+		$('div.bloc').addClass('login_form');				// Adding CSS Class to Login Div
+		$("div.main-content").attr('style', 'box-shadow: none;');	// Remove Shadow Effect
+		$("div.main-content > table").removeAttr("style");		// Remove style from table.
+		$("br").remove();						// Remove all BR Tags - WHY BR!!! WHYYYYYYYYYYYYYY
+
 		$("div.bloc > form > table > tbody > tr:first").appendTo("div.bloc > form > table > tbody");//droping language tr down.
 		$("div.bloc > form > table > tbody > tr:last").find('td').contents().unwrap();//Removing all Td tags
 		$("div.bloc > form > table > tbody > tr:last").contents().wrapAll("<span style='float: left;'></span>");//Wrapping who td with that.
@@ -51,13 +50,6 @@ jQuery(function($){
 		$("div.bloc > form > table > tbody > tr:last > td:last").remove();
 		$('input[name=ulogin]').attr('placeholder', username_text);
 		$('input[name=upassword]').attr('placeholder', pass_text);
-		$("div.bloc > form > table > tbody > tr:first > td:first").attr('style', 'padding: 25px 20px 10px;');
-		$("input[name=ulogin]").attr('style', 'width: 320px; height: 25px; border: 1px solid rgb(204, 204, 204); padding: 3px;');
-		$("div.bloc > form > table > tbody > tr:nth-child(2) > td:first").attr('style', 'padding: 5px 20px;');
-		$("input[name=upassword]").attr('style', 'width: 320px; height: 25px; border: 1px solid rgb(204, 204, 204); padding: 3px;');
-		$("div.bloc > form > table > tbody > tr:nth-child(3) > td:first").attr('style', 'padding: 20px 25px 10px;');
-		$("div.bloc > form > table > tbody > tr:last > td:first").attr('style', 'text-align: center;');
-		$("div.bloc").attr('style', 'background-color: #fff;');
 	}
 	
 	//Replacing images/ path with themes/Flat/images/ path	
