@@ -29,8 +29,8 @@ document.write("   |   <b>" + hours + ":" + minutes + " " + suffix + "</b>");
 /* Login */
 jQuery(function($){
 	if((window.location.href.indexOf("index.php") != -1 && window.location.href.indexOf("index.php?") == -1 ) || $('input[name=ulogin]').length != false) {
-		var username_text = $("div.bloc table tbody tr:first td:first").html().replace(':','');
-		var pass_text = $("div.bloc > form > table > tbody > tr:nth-child(2) > td:first").html().replace(':','');
+		var username_text = $(".bloc > form > table > tbody > tr:nth-child(2) > td:nth-child(1)").html().replace(':','');
+		var pass_text = $(".bloc > form > table > tbody > tr:nth-child(3) > td:nth-child(1)").html().replace(':','');
 	
 		/* Login Elements */
 		$("div.main-content").attr('style', 'box-shadow: none;')//Remove unwanted Shadow effect
