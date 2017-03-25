@@ -4,7 +4,7 @@
 
 ## Short Note
 
-> **Note:** As you know, There are 2 Github Repository of this theme. Actually, Our main official Github project at https://github.com/hmrserver/Flat. But this is an official clone project and modified purpose for public use. Example, We replaced kind of HMR Logo and as well Favicon with Flat OGP Style that made by HMR. Also make sure you download the latest version from [HERE](https://github.com/HAN-105/FlatOPG/releases)<br />
+> **Note:** As you know, there are 2 github repositories of this theme. Actually, our main official github project at https://github.com/hmrserver/Flat. But this is an official clone project and modified purpose for public use. Example, We replaced kinds of HMR Logo and as well Favicon with Flat OGP Style that made by HMR. Also make sure you download the latest version from [HERE](https://github.com/HAN-105/FlatOPG/releases)<br />
 
 ## Flat Theme
 
