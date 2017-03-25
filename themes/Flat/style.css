@@ -675,7 +675,7 @@ a:hover {
 }
 
 #bottomWrapper {
-    background-color: #222D32;
+    background-color: #182124;
     background-position: center top;
     background-repeat: repeat-x;
     text-align: center;
@@ -683,6 +683,8 @@ a:hover {
     text-align: center;
     width: 100%;
     height: 110px;
+	bottom: 0;
+	position: relative;
     clear: both
 }
 
@@ -1268,19 +1270,19 @@ textarea:hover {
 
 .avatar-username {
     color: #fff;
-    vertical-align: top;
-    top: 20px;
-    position: relative;
+    font-size: 15px;
     left: 20px;
-    font-size: 15px
+    position: relative;
+    top: 10px;
+    vertical-align: top;
 }
 
 .avatar-status {
-    font-size: 13px;
     color: #a2a2a2;
-    position: absolute;
+    font-size: 13px;
     left: 95px;
-    top: 100px
+    position: absolute;
+    top: 90px;
 }
 
 .avatar-status i {
@@ -1340,22 +1342,23 @@ textarea:hover {
 /* Example stylistic flourishes */
 
 .edit_avatar {
+    border-radius: 0.5em;
     color: #d2d7d6;
-    border-radius: .5em;
-    float: left;
-    padding: .5em;
-    position: absolute;
-    margin: 52px 0px 0px -1px;
     cursor: pointer;
+    float: left;
+    left: 95px;
+    margin: 52px 0 0 -1px;
+    position: absolute;
+}
+
+#remove_avatar {
+    color: #ec4545;
+    cursor: pointer;
+    margin: 52px 13px 0;
+    padding: 0;
+    position: absolute;
 }
 
 .fileContainer [type=file] {
-    cursor: pointer;
-}
-#remove_avatar {
-    padding: 2px;
-    color: #ec4545;
-    margin: 56px 0px 0px 30px;
-    position: absolute;
     cursor: pointer;
 }

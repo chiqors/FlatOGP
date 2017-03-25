@@ -1,10 +1,37 @@
 <!-- top wrapper -->  
 
-<div id="datetime"><a href="%logo%"><img src="themes/Flat/images/logo.png" /></a>
+<div id="datetime"><a href="%logo%" target="_blank"><img src="themes/Flat/images/logo.png" /></a>
 <span class="slider"><i class="fa fa-bars"></i></span>
 <span id="colorpicker" class="picker"><i class="fa fa-tint"></i></span>
 <span class="datetime">
-<script src="themes/Flat/js/Flat.js"></script>
+<script>
+//	Output date and time.
+var currentDate = new Date();
+var day = currentDate.getDate();
+var month = currentDate.getMonth() + 1;
+var year = currentDate.getFullYear();
+
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+
+var suffix = "AM";
+
+if (minutes < 10)
+	minutes = "0" + minutes;
+
+
+if (hours >= 12) {
+	suffix = "PM";
+	hours = hours - 12;
+}
+
+if (hours == 0) {
+	hours = 12;
+}
+
+document.write("<b class='mmddyyyy'>" + month + "/" + day + "/" + year + "</b><b class='ddmmyyyy'>" + day + "/" + month + "/" + year + "</b>");
+document.write("   |   <b>" + hours + ":" + minutes + " " + suffix + "</b>");</script>
 <ul>
 <li>
 <span>

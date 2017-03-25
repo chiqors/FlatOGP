@@ -1,37 +1,31 @@
-//	Output date and time.
-var currentDate = new Date();
-var day = currentDate.getDate();
-var month = currentDate.getMonth() + 1;
-var year = currentDate.getFullYear();
 
-var currentTime = new Date();
-var hours = currentTime.getHours();
-var minutes = currentTime.getMinutes();
-
-var suffix = "AM";
-
-if (minutes < 10)
-	minutes = "0" + minutes;
-
-
-if (hours >= 12) {
-	suffix = "PM";
-	hours = hours - 12;
-}
-
-if (hours == 0) {
-	hours = 12;
-}
-
-document.write("<b class='mmddyyyy'>" + month + "/" + day + "/" + year + "</b><b class='ddmmyyyy'>" + day + "/" + month + "/" + year + "</b>");
-document.write("   |   <b>" + hours + ":" + minutes + " " + suffix + "</b>");
-
-/* Login */
 jQuery(function($){
-	if((window.location.href.indexOf("index.php") != -1 && window.location.href.indexOf("index.php?") == -1 ) || $('input[name=ulogin]').length != false) {
-		var username_text = $(".bloc > form > table > tbody > tr:nth-child(2) > td:nth-child(1)").html().replace(':','');
-		var pass_text = $(".bloc > form > table > tbody > tr:nth-child(3) > td:nth-child(1)").html().replace(':','');
+$(".slider").click(function() {
+		if ($("#wrapper").hasClass("wrapper-hidder")){
+			$(".menu-bg").removeClass("menu-hidder");
+			$("#wrapper").removeClass("wrapper-hidder");
+			$.cookie('menu-bg-options', "show", { expires: 365, path: '/' });
+		} 
+		else {
+			$(".menu-bg").addClass("menu-hidder");
+			$("#wrapper").addClass("wrapper-hidder");
+			$.cookie('menu-bg-options', "hide", { expires: 365, path: '/' });
+		}
+    });
 	
+	if($.cookie("menu-bg-options") == "show") {
+		$(".menu-bg").removeClass("menu-hidder");
+		$("#wrapper").removeClass("wrapper-hidder");
+	} else if($.cookie("menu-bg-options") == "hide") {
+		$(".menu-bg").addClass("menu-hidder");
+		$("#wrapper").addClass("wrapper-hidder");
+	}
+	/* Login */
+	if((window.location.href.indexOf("index.php") != -1 && window.location.href.indexOf("index.php?") == -1 ) || $('input[name=ulogin]').length != false) {
+		var username_text = $(".bloc > form > table > tbody > tr:nth-child(2) > td:first").html().replace(':','');
+		var pass_text = $(".bloc > form > table > tbody > tr:nth-child(3) > td:first").html().replace(':','');
+
+
 		/* Login Elements */
 		$("div.main-content").attr('style', 'box-shadow: none;')//Remove unwanted Shadow effect
 		$('div.bloc h4').addClass('login_header'); //Adds classes to main-content
@@ -45,7 +39,15 @@ jQuery(function($){
 		$("div.bloc > form > table > tbody > tr:last").append("<span class='forgotp' style='float: right;'></span>");
 		$("div.bloc > form > table > tbody > tr:last").contents().wrapAll("<td>");
 		$("div.bloc > form > table > tbody > tr td > a").appendTo("div.bloc > form > table > tbody > tr:last > td > span.forgotp");
+		if ($(".g-recaptcha")[0]) {  //There is Google Captcha
+		$("div.bloc > form > table > tbody > tr:nth-child(4)").appendTo("div.bloc > form > table > tbody");
+		$("div.bloc > form > table > tbody > tr:nth-child(3) > td:first").remove();
+		$("div.bloc > form > table > tbody > tr:nth-child(3) > td").attr('align', 'center');
+		$("div.bloc > form > table > tbody > tr:nth-child(4) > td:first").attr('style', 'padding: 20px 25px 10px;');
+		}else {
 		$("div.bloc > form > table > tbody > tr:nth-child(3)").appendTo("div.bloc > form > table > tbody");
+		$("div.bloc > form > table > tbody > tr:nth-child(3) > td:first").attr('style', 'padding: 20px 25px 10px;');
+		}
 		$("div.bloc > form > table > tbody > tr:nth-child(2) > td:first").remove();
 		$("div.bloc > form > table > tbody > tr:first > td:first").remove();
 		$("div.bloc > form > table > tbody > tr:last > td:last").remove();
@@ -55,7 +57,6 @@ jQuery(function($){
 		$("input[name=ulogin]").attr('style', 'width: 320px; height: 25px; border: 1px solid rgb(204, 204, 204); padding: 3px;');
 		$("div.bloc > form > table > tbody > tr:nth-child(2) > td:first").attr('style', 'padding: 5px 20px;');
 		$("input[name=upassword]").attr('style', 'width: 320px; height: 25px; border: 1px solid rgb(204, 204, 204); padding: 3px;');
-		$("div.bloc > form > table > tbody > tr:nth-child(3) > td:first").attr('style', 'padding: 20px 25px 10px;');
 		$("div.bloc > form > table > tbody > tr:last > td:first").attr('style', 'text-align: center;');
 		$("div.bloc").attr('style', 'background-color: #fff;');
 	}
@@ -189,8 +190,9 @@ jQuery(function($){
 			$linked.addClass('active');
 		}
 	});	//treeview.each end.
-	
 	$.sidebarMenu($('.menu'));
+	$(".copied > a > span").css("background", "");
+	$(".copied > a > span").css("padding", "");
 	if(window.location.href.indexOf("home.php?m=") > -1) {
 		$(".menu").prepend('<div class="avatar-cover"><span class="avatar-username"></span><span class="avatar-status"><i class="fa fa-circle"></i>Online</span><label class="edit_avatar"><i class="fa fa-camera"></i><input class="avatarinput" type="file" /></label><span id="remove_avatar"><i class="fa fa-trash"></i></span></div>');
 		$(".avatar-username").text($("li.treeview > a.user_menu_link span.username").text());
@@ -217,30 +219,8 @@ jQuery(function($){
 			nodes[i].style.padding = "5px 0 5px 25px";
 		}
 	}
-		
-	$(".slider").click(function() {
-		if ($("#wrapper").hasClass("wrapper-hidder")){
-			$(".menu-bg").removeClass("menu-hidder");
-			$("#wrapper").removeClass("wrapper-hidder");
-			$.cookie('menu-bg-options', "show", { expires: 365, path: '/' });
-		} 
-		else {
-			$(".menu-bg").addClass("menu-hidder");
-			$("#wrapper").addClass("wrapper-hidder");
-			$.cookie('menu-bg-options', "hide", { expires: 365, path: '/' });
-		}
-    });
 	
-	if($.cookie("menu-bg-options") == "show") {
-		$(".menu-bg").removeClass("menu-hidder");
-		$("#wrapper").removeClass("wrapper-hidder");
-	} else if($.cookie("menu-bg-options") == "hide") {
-		$(".menu-bg").addClass("menu-hidder");
-		$("#wrapper").addClass("wrapper-hidder");
-	}
 		
-	$(".copied > a > span").css("background", "");
-	$(".copied > a > span").css("padding", "");
 	
 	//You might want to do if check to see if localstorage set for theImage here
 	
