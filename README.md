@@ -24,7 +24,7 @@ Join our official discord group, whether you want talk with us or play with us i
 
 -----------------------
 
-### For Installation, Follow the steps below:
+## For Installation, Follow the steps below:
 
 #### Requirements:
 >
@@ -38,21 +38,21 @@ Download the lastest version from [HERE](https://github.com/HAN-105/FlatOPG/rele
 If you already downloaded. Progress to next instruction as what you want to finish<br />
 >
 1. Extract the zip file.
-2. Copy everything inside the folder, navigate to your OGP Panel's root folder and paste there.
+2. Copy everything inside the folder, navigate to your OGP Panel's root theme folder and paste there.
 3. Once the pasting process completes, login to your OGP Panel.
 4. Navigate to Administration > Theme Settings, Change the theme to Flat and save it.
 5. That's all, now you would have Flat Theme in it. ENJOY!
 
 -----------------------
 
-### For changing default skin of the Color Picker, Follow the steps below:
+## For changing default skin of the Color Picker, Follow the steps below:
 >
 1. Open Your OGP Panel's root folder > Themes > Flat > js > skin.js.
 2. Edit PickerTheme's text (default: dark) to light or dark.
 
 -----------------------
 
-### For Billing Game's Preview images Pack Installation, Follow the steps below:
+## For Billing Game's Preview images Pack Installation, Follow the steps below:
 >
 just link them to the module's billing folder of Flat theme. (Example: xxx.xxx.xxx.xxx/themes/Flat/images/modules/billing/yourimage.png) You can use them anywhere on your site!
 
