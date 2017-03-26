@@ -191,9 +191,6 @@ $(".slider").click(function() {
 		}
 	});	//treeview.each end.
 	$.sidebarMenu($('.menu'));
-	
-	$(".copied > a > span").css("background", "");
-	$(".copied > a > span").css("padding", "");	
 	if(window.location.href.indexOf("home.php?m=") > -1) {
 		$(".menu").prepend('<div class="avatar-cover"><span class="avatar-username"></span><span class="avatar-status"><i class="fa fa-circle"></i>Online</span><label class="edit_avatar"><i class="fa fa-camera"></i><input class="avatarinput" type="file" /></label><span id="remove_avatar"><i class="fa fa-trash"></i></span></div>');
 		$(".avatar-username").text($("li.treeview > a.user_menu_link span.username").text());
@@ -210,6 +207,20 @@ $(".slider").click(function() {
 		
 		$("#avatar").attr('style', 'border-radius: 100%;width: 64px;height: 64px;');
 	}	//href index of end.
+	
+	var nodes = document.getElementById('submenu_0').getElementsByTagName('span');
+		
+	for(var i=0; i<nodes.length; i++) {
+		iconPath = nodes[i].getAttribute("data-icon_path");
+		if(typeof iconPath != "undefined" && iconPath != "") {
+			nodes[i].style.background = "url("+iconPath+") 0% 50% / 16px 16px no-repeat scroll transparent";
+			nodes[i].style.padding = "5px 0 5px 25px";
+		}
+	}
+	
+	
+	$(".copied > a > span").css("background", "");
+	$(".copied > a > span").css("padding", "");	
 	
 	//You might want to do if check to see if localstorage set for theImage here
 	
