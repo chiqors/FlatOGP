@@ -1,28 +1,40 @@
 .monitorbutton{
-	display:inline;
-	width:auto !important;
+        display:inline-block;
+        color: #323232;
+        background-color: #F0F0F6;
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+        border: 1px solid grey;
+        width: 145px;
+        height: 80px;
+        background-color: #D7EDF3 !important;
+        text-align: center;
+        float: left;
+        margin: 1%;
 }
-.monitorbutton tr td{
-	cursor:pointer;
-	color: #323232;
-	background-color:#F0F0F6;
-	transition: background-color 0.5s;
-	-webkit-transition: background-color 0.5s;
-	border: 1px solid grey;
-	width:145px !important;
-	height:72px !important;
-	background-color: #D7EDF3 !important;
-	vertical-align: middle !important;
+.monitorbutton.size {
+	line-height: 80px;
 }
-.monitorbutton tr td:hover {
-	background-color:#398bba !important;
-	transition: background-color 0.5s;
-	-webkit-transition: all 0.5s;
-	cursor:pointer;
-	color: #fff;
+.monitorbutton:hover {
+        background-color:#398bba !important;
+        transition: background-color 0.5s;
+        -webkit-transition: all 0.5s;
+        cursor:pointer;
+        color: #fff !important;
+        text-decoration:none;
 }
-.monitorbutton tr td a:hover {
-	text-decoration:none;
+.monitorbutton img {
+        height: 46px;
+        margin: 2px 0px;
+}
+.monitorbutton span {
+        display: block;
+        color: #323232;
+        font-weight: bold;
+}
+
+.monitorbutton:hover span {
+color: #fff;
 }
 
 .ts3-del-virtual.center {
@@ -33,7 +45,7 @@
 	display:none; 
 }
 
-button:active, button[type="submit"]:active, input[type="submit"]:active, .monitorbutton tr td:active {
+button:active, button[type="submit"]:active, input[type="submit"]:active, .monitorbutton:active {
 	background-color:#0F0 !important;
 	transition: background-color 0.25s;
 	-webkit-transition: background-color 0.25s;

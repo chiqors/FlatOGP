@@ -243,7 +243,9 @@ hr {
 .menu>ul li>ul>li>a>.fastdl:before {
     content: "\f019"
 }
-
+.menu > ul li > ul > li > a > .fast_download:before {
+    content: "\f019"
+}
 .menu>ul li>ul>li>a>.user_admin:before,
 .menu ul>li>a>span.subusers:before {
     content: "\f234"
