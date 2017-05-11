@@ -60,4 +60,4 @@ Credits goes to **James30263** for Creating those Billing Game's Preview images 
 
 -----------------------
 
-Support would be given at here, Talk us on discord : https://discord.me/hmrserver. if you want to discuss something.
+Support would be given at here, Talk us on discord : https://discord.me/HMR. if you want to discuss something.
