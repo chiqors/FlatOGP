@@ -13,7 +13,7 @@
 Flat Theme is a clean theme For Open Game Panel. FlatOPG first developed by King, who designed the new structure with a flat style. Designed for the purpose to create a new theme of the most reliable and easy for beginners of OGP admin. I am as his partner, we could work together to achieve this goal. This is our repository. if you want to help us, join our progress for our goal.
 
 Crafted by **HMR Team**.<br />
-Join our official discord group, whether you want talk with us or play with us in halo pc games : https://discord.me/HMR
+Join our official discord group, whether you want talk with us or play with us in halo pc games :  https://discord.gg/PAAHDc5
 
 ## Custom License:
 >
